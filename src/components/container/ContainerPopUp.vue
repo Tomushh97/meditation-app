@@ -38,13 +38,14 @@ export default {
                 return "How long do you want to meditate?"
             else 
                 return "Where do you want to meditate?"
-        }
+        },
+        ...mapGetters([
+            'timeSelected',
+            'vibeSelected',
+            'step'
+        ])
     },
-    ...mapGetters([
-        'timeSelected',
-        'vibeSelected',
-        'step'
-    ])
+    
 
 }
 </script>

@@ -66,14 +66,14 @@ export default {
                 if (this.mode === 'vibe' && choice.category.includes('vibe'))
                     return true
             })
-        }
+        },
+        ...mapGetters([
+            'timeSelected',
+            'vibeSelected',
+            'step',
+            'choices'
+        ])
     },
-    ...mapGetters([
-        'timeSelected',
-        'vibeSelected',
-        'step',
-        'choices'
-    ])
 }
 </script>
 <style scoped>

@@ -2,21 +2,24 @@
 <main class="app">
   <ContainerPopUp/>
   <ContainerBackground/>
-  <SoundEffects/>
+  <!-- <SoundEffects/> -->
+  <ContainerTimer/>
 </main>
 </template>
 
 <script>
 import ContainerPopUp from '@/components/container/ContainerPopUp'
 import ContainerBackground from '@/components/container/ContainerBackground'
-import SoundEffects from '@/components/SoundEffects'
+// import SoundEffects from '@/components/SoundEffects'
+import ContainerTimer from '@/components/container/ContainerTimer'
 
 export default {
   name: 'App',
   components: {
     ContainerPopUp,
     ContainerBackground,
-    SoundEffects
+    // SoundEffects,
+    ContainerTimer
   }
 }
 </script>

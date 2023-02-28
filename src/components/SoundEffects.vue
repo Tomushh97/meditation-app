@@ -1,6 +1,6 @@
 import { default } from './StepSelector.vue';
 <template>
-    <audio :src="updateSound" preload="auto" autoplay loop ref="audioPlayer"></audio>
+    <audio :src="updateSound()" preload="auto" autoplay loop ref="audioPlayer"></audio>
 </template>
 
 <script>
