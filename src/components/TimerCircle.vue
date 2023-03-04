@@ -26,7 +26,7 @@
             size="80"
             color="white"/>
             <PauseSvg @click="togglePlayPause"
-            v-show="!isPlaying"
+            v-show="isPlaying"
             size="80"
             color="white"/>
         </span>      
@@ -75,19 +75,6 @@ export default {
         timeFraction() {
             const rawTimeFraction = this.timeLeft / this.timeSelected
             return rawTimeFraction - (1/this.timeSelected)*(1-rawTimeFraction)
-        },
-        formattedTimeLeft() {
-            const timeLeft = this.timeLeft
-            let minutes = Math.floor(timeLeft / 60)
-            const hours = Math.floor(minutes / 60)
-            let seconds = timeLeft % 60
-            if (seconds < 10) {
-                seconds = `0${seconds}`
-            }
-            if (minutes === 60) {
-                minutes = `00`
-            }
-            return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`
         },
         colorCodes() {
             return {

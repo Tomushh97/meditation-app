@@ -30,7 +30,7 @@ export default {
             }
         },
         selectChoice(id) {
-            let index = this.choices.filter(x => x.id === id);
+            let index = this.choices.findIndex(x => x.id === id);
             if (this.step === 0) {
                 let timeSelecting = {
                     id: this.choices[index].id,
@@ -61,10 +61,13 @@ export default {
     computed: {
         filteredChoices() {
             return this.choices.filter(choice => {
-                if(this.mode === 'timer' && choice.category.includes('timer'))
+                if (this.mode === 'timer' && choice.category.includes('timer')) {
+                    // console.log(this.choices[1].id)
                     return true
-                if (this.mode === 'vibe' && choice.category.includes('vibe'))
+                }
+                if (this.mode === 'vibe' && choice.category.includes('vibe')) {
                     return true
+                } 
             })
         },
         ...mapGetters([

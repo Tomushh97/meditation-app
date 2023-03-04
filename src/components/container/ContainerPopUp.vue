@@ -68,7 +68,7 @@ export default {
     transform: translate(50%,-50%);
     background-color: rgba(5, 5, 5, 0.9);
     border-radius: 15px;
-    box-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px rgba(58, 40, 40, 0.2);
     color: white;
 }
 .button-primary {

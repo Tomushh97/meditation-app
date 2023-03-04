@@ -1,19 +1,19 @@
 <template>
 <div v-show="vibeSelected === 'space'"
 class="icon-header">
-<SpaceSvg size="40" color="white"/>
+<SpaceSvg width="20" size="40" color="white"/>
 <h1>Meditation <br>In the Space</h1>
 </div>
 <div v-show="vibeSelected === 'beach'" class="icon-header">
-    <BeachSvg size="40" color="white"/>
+    <BeachSvg width="20" size="40" color="white"/>
     <h1>Meditation <br>On the Beach</h1>
 </div>
 <div v-show="vibeSelected === 'rain'" class="icon-header">
-    <RainSvg size="40" color="white"/>
+    <RainSvg width="20" size="40" color="white"/>
     <h1>Meditation <br>Under the Rain</h1>
 </div>
 <div v-show="vibeSelected === 'alarm'" class="icon-header">
-    <RainSvg size="40" color="white"/>
+    <RainSvg width="20" size="40" color="white"/>
     <h1>Meditation <br>Finished</h1>
 </div>
 </template>

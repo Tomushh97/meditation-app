@@ -3,7 +3,7 @@ export default {
         context.commit('changeTimer', time)
     },
     changeVibe(context, vibe) {
-        context.commit('changeVive', vibe)
+        context.commit('changeVibe', vibe)
     },
     changeStep(context) {
         context.commit('changeStep')

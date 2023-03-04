@@ -13,7 +13,8 @@ const store = createStore({
                 value: 'bird'
             },
             step: 0,
-            choices: [{
+            choices: [
+            {
                 id: 1,
                 name: '10 minutes',
                 imgSrc: require("@/assets/images/button_10_minutes.png"),

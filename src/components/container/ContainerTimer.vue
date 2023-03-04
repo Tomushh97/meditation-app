@@ -4,29 +4,30 @@ v-if="step === 2"
 class="container">
 <TimerHeader/>
 <TimerCircle :timeLeft="timeLeft" :timeSelected="timeSelected.value"/>
-    <!-- <TimerRemaining :timeLeft="timeLeft"/> -->
-    <!-- <VibeSwitcher/> -->
+    <TimerRemaining :timeLeft="timeLeft"/>
+    <VibeSwitcher/>
 </section>
 </template>
 <script>
 
 import { mapGetters } from 'vuex';
 import TimerCircle from '@/components/TimerCircle'
+import TimerRemaining from '@/components/TimerRemaining'
 import TimerHeader from '@/components/TimerHeader'
+import VibeSwitcher from '@/components/VibeSwitcher'
 export default {
     name: 'ContainerTimer',
     components: {
         TimerCircle,
-        // TimerRemaining,
+        TimerRemaining,
         TimerHeader,
-        // VibeSwitcher
+        VibeSwitcher
     },
     data() {
         return {
             timeLimit: 0,
             timePassed: 0,
             timeInterval: 0,
-
         };
     },
     computed: {
@@ -73,7 +74,7 @@ export default {
     width: 400px;
     background-color: rgba(5, 5, 5, 0.7);
     border-radius: 15px;
-    box-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 3px rgba(51, 46, 46, 0.5);
 }
 h1{ 
     .container{
